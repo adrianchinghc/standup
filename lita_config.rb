@@ -29,6 +29,6 @@ Lita.configure do |config|
   config.handlers.standup.robot_email_address =  ENV['NO_REPLY_EMAIL']
 
   ## Redis connection settings
-  config.redis[:host] = ENV['REDIS_HOST']
-  config.redis[:port] = ENV['REDIS_PORT']
+  config.redis[:url] = ENV["REDISTOGO_URL"]
+  config.http.port = ENV["PORT"]
 end
