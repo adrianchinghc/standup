@@ -1,6 +1,7 @@
 # Standup Bot
 
 ## Setup
+* Sign up an account for standup bot
 * Ensure all environment variables are setup on Heroku
 * Instruction for adding Standup Bot to [private room](#joining-private-room) and [public room](#joining-public-room)
 * Add users to respective authorization groups by sending this command to Standup Bot's private chatroom

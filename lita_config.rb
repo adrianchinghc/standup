@@ -30,7 +30,5 @@ Lita.configure do |config|
 
   ## Redis connection settings
   config.redis[:url] = ENV["REDISTOGO_URL"]
-  # config.http.port = ENV["PORT"]
-  # config.redis[:host] = "127.0.0.1"
-  # config.redis[:port] = 6379
+  config.http.port = ENV["PORT"]
 end
