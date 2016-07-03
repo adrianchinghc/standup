@@ -1,8 +1,8 @@
 # Standup Bot
 
 ## Setup
-* Sign up an account for standup bot
-* Ensure all environment variables are setup on Heroku
+* Sign up a HipChat account for standup bot with the name `Standup`
+* Ensure all environment variables are setup
 * Instruction for adding Standup Bot to [private room](#joining-private-room) and [public room](#joining-public-room)
 * Add users to respective authorization groups by sending this command to Standup Bot's private chatroom
   - `auth add USER GROUP`
@@ -15,12 +15,23 @@
 `Invite People` > Select `Standup` > Click `Invite People`
 After inviting Standup to the private chatroom, go to private chatroom with Standup
 `join ROOM_ID`
-ROOM_ID = XMPP/Jabber name found [here](https://surialabs.hipchat.com/account/xmpp)
 
 ## Joining public room
 Go to private chatroom with Standup
 `join ROOM_ID`
-ROOM_ID = XMPP/Jabber name found [here](https://surialabs.hipchat.com/account/xmpp)
 
 ## Help
 Use `help` in Standup Bot's private chatroom to S.O.S.
+
+## Deploy to Heroku
+Use Heroku's RedisToGo Addons to your application.
+
+## HipChat Jabber ID/Room ID
+All JID/ROOM_ID can be found here ---> https://yourorganisation.hipchat.com/account/xmpp
+
+## Standup Summary
+Standup summary will be sent to `SUMMARY_EMAIL_RECIPIENTS` after 60 minutes by default. (Can be customized through environment variable)
+You can send summary to multiple recipients by adding more emails to `SUMMARY_EMAIL_RECIPIENTS` using comma-separated string.
+
+## Standup Reminder
+Standup Bot will send reminder to the chatroom every weekday on 6pm.

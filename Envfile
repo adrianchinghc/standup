@@ -1,8 +1,8 @@
 enable_defaults! { ENV['RACK_ENV'] != 'production' }
 
-variable :REDISTOGO_URL, :string
+variable :REDISTOGO_URL, :string, default: 'redis://127.0.0.1:6379'
 variable :SUMMARY_EMAIL_RECIPIENTS, :string
-variable :NO_REPLY_EMAIL, :string
+variable :NO_REPLY_EMAIL, :string, default: 'no-reply@standupbot.com'
 variable :HIPCHAT_JID, :string
 variable :HIPCHAT_PASSWORD, :string
 variable :STANDUP_DURATION, :integer, default: 60

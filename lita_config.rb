@@ -30,5 +30,7 @@ Lita.configure do |config|
 
   ## Redis connection settings
   config.redis[:url] = ENV["REDISTOGO_URL"]
-  config.http.port = ENV["PORT"]
+  if ENV['RACK_ENV'] == 'production'
+    config.http.port = ENV["PORT"]
+  end
 end
