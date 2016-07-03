@@ -1,7 +1,7 @@
 enable_defaults! { ENV['RACK_ENV'] != 'production' }
 
 variable :REDISTOGO_URL, :string
-variable :PORT, :integer, default: 6379
+variable :PORT, :integer
 variable :SUMMARY_EMAIL_RECIPIENTS, :string
 variable :NO_REPLY_EMAIL, :string
 variable :HIPCHAT_JID, :string
