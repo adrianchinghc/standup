@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:adrianchinghc/lita-standup.git
+  remote: git://github.com/adrianchinghc/lita-standup.git
   revision: 4f1911b5421b1754fe10c526c460cdece8af6c12
   specs:
     lita-standup (0.0.2)
