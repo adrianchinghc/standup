@@ -5,6 +5,6 @@ gem "lita-hipchat"
 gem 'lita-schedule'
 gem 'pry-byebug'
 gem "lita-abuse"
-gem "lita-standup", git: 'git@github.com:adrianchinghc/lita-standup.git'
+gem "lita-standup", github: 'adrianchinghc/lita-standup'
 gem 'envied'
 gem "lita-dotenv"
