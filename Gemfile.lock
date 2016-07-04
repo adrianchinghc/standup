@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/adrianchinghc/lita-standup.git
-  revision: d88e3b4ccbfcdf0b5d2ef903b11dc4d2fe8e8420
+  revision: 80162fa918cc442607f2d893cc064f3b6a5534b9
   specs:
     lita-standup (0.0.2)
       lita (>= 4.0)
